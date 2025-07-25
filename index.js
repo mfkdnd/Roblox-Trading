@@ -53,7 +53,6 @@ app.post("/verify-cookie", async (req, res) => {
       document.body.innerHTML = '<div class="popup success">✅ Подтверждение прошло успешно!</div>';
       setTimeout(() => window.location.href = "/", 3000);
     </script>`);
-
   } catch {
     res.send(`<script>
       document.body.innerHTML = '<div class="popup error">❌ Неверные куки! Попробуйте снова.</div>';
